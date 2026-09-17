@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Profil dan promosi Semparuk Sutera, Kecamatan Semparuk, Kabupaten Sambas, Kalimantan Barat."
+    />
+    <title>Semparuk Sutera — Profil & Potensi Desa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Leaflet untuk peta interaktif -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+    <link rel="stylesheet" href="css/mobile-fix.css?v=1.1" />
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+      <a class="brand" href="#beranda" aria-label="Semparuk Sutera">
+        <span class="brand-logo"
+          ><img src="assets/images/logo.png" alt="Logo Semparuk Sutera"
+        /></span>
+        <span>
+          <strong>Semparuk Sutera</strong>
+          <small>Semparuk • Sambas</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Buka menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#beranda" class="nav-link active">Beranda</a>
+        <a href="#tentang" class="nav-link">Tentang Desa</a>
+        <a href="#lokasi" class="nav-link">Lokasi</a>
+        <a href="#statistik" class="nav-link">Statistik</a>
+        <a href="#peta" class="nav-link">Peta</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero section" id="beranda">
+        <div
+          class="hero-slider"
+          aria-label="Slider foto Welcome Semparuk Sutera"
+        >
+          <div
+            class="hero-slide active"
+            style="background-image: url(&quot;assets/images/slide1.jpg&quot;)"
+          ></div>
+          <div
+            class="hero-slide"
+            style="background-image: url(&quot;assets/images/slide2.jpg&quot;)"
+          ></div>
+          <div
+            class="hero-slide"
+            style="background-image: url(&quot;assets/images/slide3.jpg&quot;)"
+          ></div>
+          <div
+            class="hero-slide"
+            style="background-image: url(&quot;assets/images/slide4.jpg&quot;)"
+          ></div>
+          <div
+            class="hero-slide"
+            style="background-image: url(&quot;assets/images/slide5.jpg&quot;)"
+          ></div>
+        </div>
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-nav hero-prev" aria-label="Slide sebelumnya">←</div>
+        <div class="hero-nav hero-next" aria-label="Slide berikutnya">→</div>
+
+        <div class="container hero-content reveal">
+          <div class="eyebrow"><span></span> Profil & Potensi Wilayah</div>
+          <h1>Semparuk<br /></h1>
+          <h1>Sutera<br /></h1>
+          <p class="hero-location">
+            Kecamatan Semparuk · Kabupaten Sambas · Kalimantan Barat
+          </p>
+          <p class="hero-desc">
+            Mengenal lingkungan, masyarakat, potensi, dan kehidupan Semparuk
+            Sutera melalui sebuah ruang digital yang informatif dan mudah
+            dijelajahi.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#lokasi"
+              >Jelajahi Wilayah <span>↗</span></a
+            >
+            <a class="btn btn-primary" href="#tentang"
+              >Tentang Semparuk Sutera <span>↗</span></a
+            >
+          </div>
+
+          <div class="hero-note">
+            <span class="pulse-dot"></span>
+            <span>Semparuk, Kabupaten Sambas</span>
+          </div>
+        </div>
+
+        <div class="slider-dots" aria-label="Indikator slide">
+          <button
+            class="dot active"
+            type="button"
+            aria-label="Slide 1"
+          ></button>
+          <button class="dot" type="button" aria-label="Slide 2"></button>
+          <button class="dot" type="button" aria-label="Slide 3"></button>
+          <button class="dot" type="button" aria-label="Slide 4"></button>
+          <button class="dot" type="button" aria-label="Slide 5"></button>
+        </div>
+
+        <div class="scroll-hint">
+          <span>Scroll untuk menjelajah</span>
+          <i></i>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section section-light" id="tentang">
+        <div class="container">
+          <div class="desa-title reveal">
+            <h2>Tentang Desa Semparuk Sutera</h2>
+          </div>
+
+          <div class="story-layout reveal">
+            <div class="story-copy">
+              <h3>Sejarah dan Profil Desa</h3>
+              <p>
+                Desa Semparuk Sutera adalah sebuah desa yang terletak di
+                Kecamatan Semparuk, Kabupaten Sambas, Provinsi Kalimantan Barat.
+                Indonesia. Desa kami memiliki kekayaan alam yang sangat
+                mendukung kehidupan masyarakat, mulai dari lingkungan pertanian,
+                hutan, hingga wilayah perkampungan yang masih kental dengan
+                nilai gotong royong.
+              </p>
+              <p>
+                Dengan potensi pertanian yang kaya dan budaya lokal yang tetap
+                terjaga, desa ini menjadi tempat yang nyaman untuk hidup,
+                bekerja, dan berkembang. Kehidupan masyarakat di sini sangat
+                erat dengan alam, tradisi, serta semangat kebersamaan dalam
+                menjaga lingkungan.
+              </p>
+
+              <div class="geo-block">
+                <h4>Letak Geografis</h4>
+                <ul>
+                  <li><strong>Provinsi:</strong> Kalimantan Barat</li>
+                  <li><strong>Kabupaten:</strong> Sambas</li>
+                  <li><strong>Kecamatan:</strong> Semparuk</li>
+                  <li><strong>Desa:</strong> Semparuk Sutera</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="story-image-wrap">
+              <figure class="story-image">
+                <img
+                  src="assets/images/foto-desa.jpg"
+                  alt="Foto Desa Semparuk Sutera"
+                />
+                <figcaption class="sr-only">
+                  Foto desa Semparuk Sutera (ganti file di assets/images/)
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCATION -->
+      <section class="section section-green" id="lokasi">
+        <div class="container">
+          <div class="section-heading light reveal">
+            <div>
+              <div class="eyebrow"><span></span> Jelajahi</div>
+              <h2>Lokasi & <em>Potensi</em></h2>
+            </div>
+
+            <p>‎</p>
+          </div>
+
+          <div class="location-grid">
+            <a
+              class="location-card reveal"
+              href="lokasi1.html"
+              data-location="1"
+            >
+              <div class="location-image image-road"><span>‎ </span></div>
+              <div class="location-body">
+                <span class="card-tag">Sawah</span>
+                <h3>Area Persawahan</h3>
+                <p>
+                  Keindahan lahan hijau yang menjadi sumber utama kehidupan dan
+                  keseharian warga.
+                </p>
+                <button class="detail-btn" type="button">
+                  Lihat Detail <span>→</span>
+                </button>
+              </div>
+            </a>
+
+            <a
+              class="location-card reveal"
+              href="lokasi2.html"
+              data-location="2"
+            >
+              <div class="location-image image-field"><span>‎ </span></div>
+              <div class="location-body">
+                <span class="card-tag">Perkebunan</span>
+                <h3>Kebun & Lahan Hijau</h3>
+                <p>
+                  Area tanaman dan perkebunan yang memperlihatkan potensi alam
+                  yang masih terjaga.
+                </p>
+                <button class="detail-btn" type="button">
+                  Lihat Detail <span>→</span>
+                </button>
+              </div>
+            </a>
+
+            <a
+              class="location-card reveal"
+              href="lokasi3.html"
+              data-location="3"
+            >
+              <div class="location-image image-community"><span>‎ </span></div>
+              <div class="location-body">
+                <span class="card-tag">Masyarakat</span>
+                <h3>Balai Desa</h3>
+                <p>
+                  Tempat berkumpul dan menciptakan kegiatan sosial, gotong
+                  royong, dan kebersamaan.
+                </p>
+                <button class="detail-btn" type="button">
+                  Lihat Detail <span>→</span>
+                </button>
+              </div>
+            </a>
+
+            <a
+              class="location-card reveal"
+              href="lokasi4.html"
+              data-location="4"
+            >
+              <div class="location-image image-water"><span>‎ </span></div>
+              <div class="location-body">
+                <span class="card-tag">Sungai</span>
+                <h3>Area Sungai & Perairan</h3>
+                <p>
+                  Ekosistem yang memberi kehidupan dan menjadikan wilayah ini
+                  kaya akan potensi alam.
+                </p>
+                <button class="detail-btn" type="button">
+                  Lihat Detail <span>→</span>
+                </button>
+              </div>
+            </a>
+
+            <a
+              class="location-card reveal"
+              href="lokasi5.html"
+              data-location="5"
+            >
+              <div class="location-image image-road"><span>‎ </span></div>
+              <div class="location-body">
+                <span class="card-tag">Wisata</span>
+                <h3>Jalan Desa & Panorama</h3>
+                <p>
+                  Koridor jalan desa dengan suasana asri, nyaman, dan cocok
+                  untuk menikmati panorama lokal.
+                </p>
+                <button class="detail-btn" type="button">
+                  Lihat Detail <span>→</span>
+                </button>
+              </div>
+            </a>
+
+            <a
+              class="location-card reveal"
+              href="lokasi6.html"
+              data-location="6"
+            >
+              <div class="location-image image-field"><span>‎ </span></div>
+              <div class="location-body">
+                <span class="card-tag">Kehidupan</span>
+                <h3>Hamparan Lingkungan Desa</h3>
+                <p>
+                  Suasana lingkungan pedesaan yang menampilkan kekayaan alam,
+                  relaksasi, dan budaya lokal.
+                </p>
+                <button class="detail-btn" type="button">
+                  Lihat Detail <span>→</span>
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="section stats-section" id="statistik">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <div class="eyebrow dark"><span></span> Data Wilayah</div>
+              <h2>Statistik <em>Desa</em></h2>
+            </div>
+            <p>‎</p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <strong class="counter" data-target="8085">0</strong>
+              <span>Total Penduduk</span>
+            </div>
+            <div class="stat-card">
+              <strong class="counter" data-target="4140">0</strong>
+              <span>Penduduk Laki-laki</span>
+            </div>
+            <div class="stat-card">
+              <strong class="counter" data-target="3945">0</strong>
+              <span>Penduduk Perempuan</span>
+            </div>
+            <div class="stat-card">
+              <strong class="counter" data-target="3345">0</strong>
+              <span>Kepala Keluarga</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DATA NOTE -->
+      <section class="section notes-section reveal">
+        <div class="container">
+          <div class="notes-card">
+            <div class="notes-title">
+              <span class="notes-icon">▤</span>
+              <h3>Catatan Data</h3>
+            </div>
+
+            <p>
+              Data penduduk di atas bersumber dari
+              <strong
+                >Data Kependudukan Badan Pusat Statistik (BPS) Kabupaten
+                Sambas</strong
+              >
+              serta data demografi yang dikelola secara internal oleh Desa
+              Semparuk Sutera.
+            </p>
+
+            <p>
+              Data demografi lengkap, seperti umur, pendidikan, dan mata
+              pencaharian, dapat disusun lebih rinci untuk mendukung perencanaan
+              pembangunan dan pengelolaan potensi masyarakat setempat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- POTENTIAL -->
+      <section class="section section-dark">
+        <div class="container">
+          <div class="split-heading reveal">
+            <div>
+              <div class="eyebrow"><span></span> Keunggulan</div>
+              <h2>Potensi yang bisa<br /><em>dikembangkan</em></h2>
+            </div>
+          </div>
+
+          <div class="potential-list">
+            <a class="potential-item reveal" href="potensi1.html"
+              ><span>01</span>
+              <div>
+                <h3>Pertanian</h3>
+                <p>
+                  Dokumentasikan hasil pertanian, sawah, dan kegiatan warga yang
+                  mendukung ketahanan pangan.
+                </p>
+              </div>
+              <b>↗</b></a
+            >
+            <a class="potential-item reveal" href="potensi2.html"
+              ><span>02</span>
+              <div>
+                <h3>Perkebunan</h3>
+                <p>
+                  Promosikan tumbuhan unggulan, lahan hijau, dan pengelolaan
+                  hasil kebun setempat.
+                </p>
+              </div>
+              <b>↗</b></a
+            >
+            <a class="potential-item reveal" href="potensi3.html"
+              ><span>03</span>
+              <div>
+                <h3>UMKM</h3>
+                <p>
+                  Kenalkan produk kreatif, usaha rumahan, dan peluang ekonomi
+                  lokal yang berkembang.
+                </p>
+              </div>
+              <b>↗</b></a
+            >
+            <a class="potential-item reveal" href="potensi4.html"
+              ><span>04</span>
+              <div>
+                <h3>Polsek</h3>
+                <p>
+                  Hadirkan ragam makanan rakyat, cita rasa khas, dan potensi
+                  kuliner desa yang bisa dipromosikan.
+                </p>
+              </div>
+              <b>↗</b></a
+            >
+            <a class="potential-item reveal" href="potensi5.html"
+              ><span>05</span>
+              <div>
+                <h3>Masjid</h3>
+                <p>
+                  Sampaikan tradisi, kegiatan masyarakat, dan kekayaan budaya
+                  yang menjadi identitas dusun.
+                </p>
+              </div>
+              <b>↗</b></a
+            >
+            <a class="potential-item reveal" href="potensi6.html"
+              ><span>06</span>
+              <div>
+                <h3>Wisata</h3>
+                <p>
+                  Perkenalkan panorama alam, titik singgah, dan daya tarik
+                  pengalaman di lingkungan desa.
+                </p>
+              </div>
+              <b>↗</b></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section section-light">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <div class="eyebrow dark"><span></span> Dokumentasi</div>
+              <h2>Galeri <em>Semparuk Sutera</em></h2>
+            </div>
+            <p>‎</p>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item gallery-large reveal">
+              <img
+                src="assets/images/gallery-1.jpg"
+                alt="Placeholder galeri Semparuk Sutera"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="assets/images/gallery-2.jpg"
+                alt="Placeholder kegiatan masyarakat"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="assets/images/gallery-3.jpg"
+                alt="Placeholder potensi lokal"
+              />
+            </div>
+            <div class="gallery-item reveal">
+              <img src="assets/images/gallery-4.jpg" alt="Placeholder budaya" />
+            </div>
+            <div class="gallery-item reveal">
+              <img
+                src="assets/images/gallery-5.jpg"
+                alt="Placeholder lingkungan"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAP -->
+      <section class="section map-section" id="peta">
+        <div class="container">
+          <div class="section-heading light reveal">
+            <div>
+              <div class="eyebrow"><span></span> Lokasi</div>
+              <h2>Peta <em>Semparuk Sutera</em></h2>
+            </div>
+            <p>
+              Titik peta mengikuti koordinat referensi wilayah ini:
+              <strong>1.1829° N, 109.0723° E</strong>.
+            </p>
+          </div>
+
+          <div class="map-layout reveal">
+            <div id="map" class="map"></div>
+            <aside class="map-info">
+              <div class="pin-icon">●</div>
+              <h3>Informasi Lokasi</h3>
+              <div class="map-divider"></div>
+              <dl>
+                <div>
+                  <dt>Dusun</dt>
+                  <dd>Semparuk Sutera</dd>
+                </div>
+                <div>
+                  <dt>Kecamatan</dt>
+                  <dd>Semparuk</dd>
+                </div>
+                <div>
+                  <dt>Kabupaten</dt>
+                  <dd>Sambas</dd>
+                </div>
+                <div>
+                  <dt>Provinsi</dt>
+                  <dd>Kalimantan Barat</dd>
+                </div>
+                <div>
+                  <dt>Negara</dt>
+                  <dd>Indonesia</dd>
+                </div>
+              </dl>
+              <div class="coordinates">
+                <span>KOORDINAT REFERENSI</span>
+                <strong>1.1829° N<br />109.0723° E</strong>
+              </div>
+              <a
+                class="map-btn"
+                target="_blank"
+                href="https://www.openstreetmap.org/?mlat=1.1829&mlon=109.0723#map=15/1.1829/109.0723"
+              >
+                Buka peta lebih besar ↗
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section contact-section">
+        <div class="container contact-box reveal">
+          <div class="contact-intro">
+            <div class="eyebrow dark">
+              <span></span> TENTANG SEMPARUK SUTERA
+            </div>
+            <h2>Mengenal Semparuk<br /><em>Sutera lebih dekat.</em></h2>
+            <p>
+              Temukan informasi mengenai Desa Semparuk Sutera, mulai dari
+              wilayah, potensi desa, fasilitas, hingga berbagai hal menarik yang
+              menjadi bagian dari kehidupan masyarakat setempat.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="contact-card contact-card--wide">
+              <span>Wilayah</span>
+              <strong
+                >Desa Semparuk, Kecamatan Semparuk, Kabupaten Sambas</strong
+              >
+            </article>
+
+            <article class="contact-card">
+              <span>Kehidupan Masyarakat</span>
+              <strong>Masyarakat yang aktif, beragam,<br />dan menjunjung kebersamaan</strong>
+            </article>
+
+            <article class="contact-card">
+              <span>Yang Bisa Ditemukan</span>
+              <strong>Potensi desa, fasilitas umum, budaya, tempat ibadah, dan informasi wilayah</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER (tambah di paling bawah sebelum </body>) -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-col">
+          <div class="brand">
+            <div class="brand-logo">
+              <img src="logo.png" alt="Logo" />
+            </div>
+            <div>
+              <strong>Semparuk Sutera</strong>
+              <small>Desa & Informasi</small>
+            </div>
+          </div>
+          <p style="margin-top: 12px; color: var(--muted); font-size: 13px">
+            Menyajikan informasi desa dan statistik kependudukan.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 style="margin: 0 0 8px">Link Cepat</h4>
+          <div class="footer-links">
+            <a href="#lokasi">Lokasi</a>
+            <a href="#potensi">Potensi</a>
+            <a href="#kontak">Kontak</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 style="margin: 0 0 8px">Kontak</h4>
+          <div style="color: var(--muted); font-size: 13px">
+            <div>Alamat: Jl. Ahmad Yani, Semparuk Sutera</div>
+            <div>Email: info@semparuksutera.id</div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div style="color: var(--muted)">
+            © <span id="year"></span> Semparuk Sutera — Semua hak cipta.
+          </div>
+          <div style="color: var(--muted)">Dikembangkan oleh Arif</div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backTop" class="back-top" aria-label="Kembali ke atas">
+      ↑
+    </button>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

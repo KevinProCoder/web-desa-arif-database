@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sawah | Semparuk Sutera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/detail.css">
+  <style>
+    body.detail-page { background: linear-gradient(180deg, #edf6ee 0%, #e8f0ec 100%); }
+    .detail-hero { background-image: url('assets/images/lokasi1.jpg'); }
+    .btn-primary { background: linear-gradient(135deg, #214d39, #41715a); }
+  </style>
+</head>
+<body class="detail-page">
+  <header class="detail-header">
+    <div class="container detail-nav">
+      <a class="brand" href="index.html" aria-label="Semparuk Sutera">
+        <span class="brand-logo"><img src="logo.png" alt="Logo Semparuk Sutera"></span>
+        <span>
+          <strong>Semparuk Sutera</strong>
+          <small>Semparuk • Sambas</small>
+        </span>
+      </a>
+      <a class="btn btn-secondary" href="index.html#lokasi">Kembali ke Lokasi</a>
+    </div>
+  </header>
+
+  <main class="detail-main">
+    <div class="container">
+      <section class="detail-hero" aria-label="Foto lokasi sawah">
+        <button class="zoom-trigger" type="button" aria-label="Perbesar foto">⤢</button>
+        <div class="detail-hero-content">
+          <div class="eyebrow"><span></span> Lokasi</div>
+          <h1>Sawah</h1>
+          <p>Hamparan sawah yang menjadi simbol kehidupan agraris dusun Semparuk Sutera dengan suasana tenang dan hijau yang memanjakan mata.</p>
+        </div>
+      </section>
+
+      <div class="lightbox" id="lightbox" aria-hidden="true">
+        <div class="lightbox-media">
+          <button class="lightbox-close" type="button" aria-label="Tutup gambar">×</button>
+          <img src="assets/images/lokasi1.jpg" alt="Sawah Semparuk Sutera" />
+        </div>
+      </div>
+
+      <div class="detail-layout">
+        <article class="detail-card">
+          <h2>Deskripsi Lokasi</h2>
+          <p>Area persawahan di Semparuk Sutera menjadi salah satu bagian penting dari aktivitas warga dan sumber kesejahteraan masyarakat. Keberadaannya tidak hanya menampilkan suasana pedesaan yang asri, tetapi juga menggambarkan hubungan erat antara manusia, alam, dan tradisi bertani.</p>
+          <p>Dengan lahan yang terbentang luas, area ini berpotensi menjadi tempat dokumentasi kegiatan pertanian, kegiatan panen, serta gambaran hidup masyarakat yang masih menjunjung semangat gotong royong.</p>
+          <ul class="detail-list">
+            <li>Suasana alami yang asri dan tenang.</li>
+            <li>Menjadi ikon utama kegiatan pertanian lokal.</li>
+            <li>Potensial untuk dokumentasi dan promosi budaya agraris.</li>
+          </ul>
+        </article>
+
+        <aside class="side-card">
+          <h3>Informasi Tambahan</h3>
+          <div class="info-grid">
+            <div class="info-item"><span>Nama</span><strong>Sawah Dusun Semparuk Sutera</strong></div>
+            <div class="info-item"><span>Alamat</span><strong>Dusun Semparuk Sutera, Kecamatan Semparuk</strong></div>
+            <div class="info-item"><span>Kategori</span><strong>Potensi Agraris</strong></div>
+            <div class="info-item"><span>Catatan</span><strong>Data dapat disesuaikan dengan kondisi aktual</strong></div>
+          </div>
+          <div class="detail-actions">
+            <a class="btn btn-primary" href="index.html#lokasi">Kembali ke Lokasi</a>
+            <a class="btn btn-secondary" href="index.html">Beranda</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
